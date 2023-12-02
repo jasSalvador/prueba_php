@@ -788,3 +788,23 @@ footer a:hover {
         padding-top: 15px !important;
     }
 }
+
+
+/*Fondo servicios*/
+
+.overlay-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0); /* Inicialmente transparente */
+  transition: background-color 0.3s ease; /* Transición suave */
+  z-index: 1;
+  opacity: 0;
+}
+
+.box:hover .overlay-bg {
+  background-color: rgba(4, 4, 92, 0.6); /* Cambia la opacidad al pasar el mouse sobre la caja (.box) */
+  opacity: 1;
+}
