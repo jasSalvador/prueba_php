@@ -78,15 +78,11 @@ footer .btn:hover {
     box-shadow: 0px 4px 26px 6px rgba(0,0,0,0.75);
 -webkit-box-shadow: 0px 4px 26px 6px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 4px 26px 6px rgba(0,0,0,0.75);
-    /* border: solid 2px rgb(17, 17, 16);
-    -moz-box-shadow: 0px 0px 30px rgb(17, 17, 16);
-    -webkit-box-shadow: 0px 0px 30px rgb(17, 17, 16);
-    box-shadow: 0px 0px 30px rgb(17, 17, 16); */
 }
 
 /*HEADER/VIDEO*/
 .header {
-    min-height: 85vh;
+    min-height: 95vh;
     position: relative;
 }
 
@@ -122,15 +118,6 @@ footer .btn:hover {
 .hero img:hover{
     opacity: 0.6;
 }
-
-/* Agrega una transición suave para la animación */
-/* .girar {
-    transition: transform 0.7s; 
-} */
-/* Rota la imagen 180 grados hacia la izquierda al pasar el mouse */
-/* .girar:hover {
-    transform: rotateY(180deg);
-} */
 
 .hero-text-mov {
     width: auto;
@@ -618,6 +605,15 @@ footer a:hover {
 }
 
 @media (max-width: 767px) {
+    .navbar{
+        /* background-color: rgba(15, 15, 15, 0.612) !important; */
+        background-color: rgba(4, 4, 92, 0.699) !important;
+        width: 100%;
+        z-index: 10;
+    }
+    .navbar-nav .nav-link{
+        color: white;
+    }
     .header .navbar-brand {
         display: none;
     }
@@ -658,6 +654,15 @@ footer a:hover {
 }
 
 @media (max-width: 576px) {
+    .navbar{
+        /* background-color: rgba(15, 15, 15, 0.612) !important; */
+        background-color: rgba(4, 4, 92, 0.664) !important;
+        width: 100%;
+        z-index: 10;
+    }
+    .navbar-nav .nav-link{
+        color: white;
+    }
     .header {
         min-height: 73vh;
     }
@@ -671,6 +676,10 @@ footer a:hover {
     .hero {
         display: none;
     }
+    .custom-shape-divider-bottom-1701560545 .shape-fill {
+        fill: rgb(4, 4, 92) !important;
+    }
+
     /*bienvenido*/
     .main-cont {
         text-align: center;
@@ -794,50 +803,52 @@ footer a:hover {
 /*Fondo opacidad servicios*/
 
 .overlay-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0); 
-  transition: background-color 0.3s ease; /* Transición suave */
-  z-index: 1;
-  opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+    /* Transición suave */
+    z-index: 1;
+    opacity: 0;
 }
 
 .box:hover .overlay-bg {
-  background-color: rgba(4, 4, 92, 0.6); 
-  opacity: 1;
+    background-color: rgba(4, 4, 92, 0.6);
+    opacity: 1;
 }
 
 
 /* estilo navbar sobrepuesto */
 .navbar-custom {
-  position: absolute;
-  width: 100%;
-  z-index: 1000; /* Asegura que el navbar esté sobre el video */
-  background-color: transparent; 
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    /* Asegura que el navbar esté sobre el video */
+    background-color: transparent;
 }
 
 
 /* Divisor del hero */
 .custom-shape-divider-bottom-1701560545 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
 .custom-shape-divider-bottom-1701560545 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 58px;
-  transform: rotateY(180deg);
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 58px;
+    transform: rotateY(180deg);
 }
 
 .custom-shape-divider-bottom-1701560545 .shape-fill {
-  fill: #000000;
+    fill: #000000;
 }
