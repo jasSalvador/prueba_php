@@ -610,7 +610,7 @@ footer a:hover {
 @media (max-width: 767px) {
     .navbar{
         /* background-color: rgba(15, 15, 15, 0.612) !important; */
-        background-color: rgba(4, 4, 92, 0.699) !important;
+        /* background-color: rgba(4, 4, 92, 0.699) !important; */
         width: 100%;
         z-index: 10;
     }
@@ -659,7 +659,7 @@ footer a:hover {
 @media (max-width: 576px) {
     .navbar{
         /* background-color: rgba(15, 15, 15, 0.612) !important; */
-        background-color: rgba(4, 4, 92, 0.664) !important;
+        /* background-color: rgba(4, 4, 92, 0.664) !important; */
         width: 100%;
         z-index: 10;
     }
@@ -834,6 +834,11 @@ footer a:hover {
     z-index: 1000;
     /* Asegura que el navbar esté sobre el video */
     background-color: transparent;
+}
+
+.navbar-custom.expanded {
+  background-color: rgba(4, 4, 92, 0.6); /* Fondo azul al expandirse */
+  transition: background-color 0.3s ease-in-out; /* Efecto de transición suave */
 }
 
 

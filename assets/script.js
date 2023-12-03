@@ -279,3 +279,8 @@ window.addEventListener('DOMContentLoaded', (ev0) => {
 });*/
 
 
+$(document).ready(function(){
+  $('.navbar-toggler').click(function(){
+    $('.navbar-custom').toggleClass('expanded');
+  });
+});
