@@ -808,3 +808,36 @@ footer a:hover {
   background-color: rgba(4, 4, 92, 0.6); /* Cambia la opacidad al pasar el mouse sobre la caja (.box) */
   opacity: 1;
 }
+
+
+/* estilo navbar sobrepuesto */
+.navbar-custom {
+  position: absolute;
+  width: 100%;
+  z-index: 1000; /* Asegura que el navbar esté sobre el video */
+  background-color: transparent; /* Hace el fondo del navbar transparente */
+}
+
+
+
+
+.custom-shape-divider-bottom-1701560545 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1701560545 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 58px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1701560545 .shape-fill {
+  fill: #04045C;
+}
