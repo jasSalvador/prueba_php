@@ -585,6 +585,9 @@ footer a:hover {
 }
 
 @media (max-width: 991px) {
+    .header .header-btn{
+        padding-bottom: 30px;
+    }
     .hero-text-mov{
         font-size: 1.2rem;
     }
@@ -676,11 +679,14 @@ footer a:hover {
     .hero {
         display: none;
     }
-    .custom-shape-divider-bottom-1701560545 .shape-fill {
+    /* .custom-shape-divider-bottom-1701560545 .shape-fill {
         fill: rgb(4, 4, 92) !important;
-    }
+    } */
 
     /*bienvenido*/
+    .main{
+        background-color: #000;
+    }
     .main-cont {
         text-align: center;
         margin-bottom: -50px;
