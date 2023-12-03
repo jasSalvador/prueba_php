@@ -484,7 +484,7 @@
 
                                 <input type="text" name="apellido" id="apellido" autocapitalize="words"
                                     class="mb-2 p-2 w-100 rounded-2 bg-light" placeholder="Apellido*" required
-                                    pattern="/^[a-zA-Z]+(?: [a-zA-Z]+){1,2}$/" title="Solo caracteres alfabéticos">
+                                    pattern="^[a-zA-Z]+(?: [a-zA-Z]+){0,2}$" title="Solo caracteres alfabéticos">
                             </div>
 
                             <div class="d-flex gap-3 align-items-center">
@@ -496,7 +496,7 @@
                             <div class="d-flex gap-3 align-items-center">
                                 <input type="text" id="comuna" name="comuna" autocapitalize="words"
                                     class="my-2 p-2 w-100 rounded-2 bg-light" placeholder="Comuna*" required
-                                    pattern="[a-zA-Z]+" title="Solo caracteres alfabéticos">
+                                    pattern="^[a-zA-Z]+(?: [a-zA-Z]+){0,2}$" title="Solo caracteres alfabéticos">
                             </div>
 
                             <div class="d-flex flex-wrap align-items-center gap-3">
