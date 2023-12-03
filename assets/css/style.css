@@ -788,3 +788,56 @@ footer a:hover {
         padding-top: 15px !important;
     }
 }
+
+
+
+/*Fondo opacidad servicios*/
+
+.overlay-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0); 
+  transition: background-color 0.3s ease; /* Transición suave */
+  z-index: 1;
+  opacity: 0;
+}
+
+.box:hover .overlay-bg {
+  background-color: rgba(4, 4, 92, 0.6); 
+  opacity: 1;
+}
+
+
+/* estilo navbar sobrepuesto */
+.navbar-custom {
+  position: absolute;
+  width: 100%;
+  z-index: 1000; /* Asegura que el navbar esté sobre el video */
+  background-color: transparent; 
+}
+
+
+/* Divisor del hero */
+.custom-shape-divider-bottom-1701560545 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1701560545 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 58px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1701560545 .shape-fill {
+  fill: #000000;
+}
