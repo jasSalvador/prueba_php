@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Producción y animación de eventos">
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -30,7 +30,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <nav class="navbar navbar-expand-md">
         <div class="container">
@@ -79,14 +78,12 @@
             Tu navegador no soporta el elemento de video.
         </video>
     </section>
-
-
     <!--3 img-->
     <section class="hero bg-black py-5 paused">
         <div class="d-flex justify-content-center align-items-center py-5 my-5 mx-auto">
             <div class="col-lg-3 col-md-3 col-sm-3 anim-down">
                 <div class="">
-                    <img src="./assets/img/eventos.jpg" class="girar d-block w-100 p-2" alt="Eventos corporativos">
+                    <img src="./assets/img/eventos.jpg" class="d-block w-100 p-2" alt="Eventos corporativos">
                 </div>
                 <div class="hero-text-mov text-center mt-4 mx-auto">
                     <ul>
@@ -98,7 +95,7 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 anim-down anim-pause-1">
                 <div class="">
-                    <img src="./assets/img/celebraciones.jpeg" class="girar d-block w-100 p-2" alt="Celebraciones">
+                    <img src="./assets/img/celebraciones.jpeg" class="d-block w-100 p-2" alt="Celebraciones">
                 </div>
                 <div class="hero-text-mov text-center mt-4 mx-auto">
                     <ul>
@@ -110,7 +107,7 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 anim-down anim-pause-2">
                 <div class="">
-                    <img src="./assets/img/dj-hero.jpg" class="girar d-block w-100 p-2" alt="Dj en vivo">
+                    <img src="./assets/img/dj-hero.jpg" class="d-block w-100 p-2" alt="Dj en vivo">
                 </div>
                 <div class="hero-text-mov text-center mt-4 mx-auto">
                     <ul>
@@ -170,7 +167,7 @@
     <!--INFO SERVICIOS-->
     <section class="info pt-2 mb-5 paused" id="servicios">
         <div class="container py-3">
-            <h2 class="text-start py-5 fw-bold anim-down">Tenemos todo lo necesario!</h2>
+            <h2 class="text-start py-5 fw-bold anim-right">Tenemos todo lo necesario!</h2>
             <div class="row justify-content-evenly">
                 <!--DJ-->
                 <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 mb-4 anim-fade-in anim-pause-1">
@@ -305,7 +302,7 @@
     <!--packs-->
     <section class="packs py-5 mt-5 paused" id="packs">
         <div class="container pt-4 px-3 titulo1">
-            <h2 class="pt-5 fw-bold mx-auto anim-down">Diversidad de Packs y servicios DJ</h2>
+            <h2 class="pt-5 fw-bold mx-auto anim-right">Diversidad de Packs y servicios DJ</h2>
             <h4 class="pt-2 pb-5 text-light anim-right">Seleccionados cuidadosamente para adaptarse a tus necesidades y
                 satisfacer
                 todas tus expectativas.</h4>
@@ -459,7 +456,7 @@
                     <div class="modal-body">
 
                         <!--FORMULARIO-->
-                        <form method="post" action="" onsubmit="handleSubmit()" class="d-flex flex-column px-4" id="cotizacion">
+                        <form method="post" action="" class="d-flex flex-column px-4" id="formCotizacion">
 
                             <div class="d-flex flex-wrap gap-3 align-items-center">
                                 <input type="text" name="nombre" id="nombre" autocapitalize="words"
@@ -468,7 +465,7 @@
 
                                 <input type="text" name="apellido" id="apellido" autocapitalize="words"
                                     class="mb-2 p-2 w-100 rounded-2 bg-light" placeholder="Apellido*" required 
-                                    pattern="[a-zA-Z]+" title="Solo caracteres alfabéticos">
+                                    pattern="/^[a-zA-Z]+(?: [a-zA-Z]+){1,2}$/" title="Solo caracteres alfabéticos">
                             </div>
 
                             <div class="d-flex gap-3 align-items-center">
@@ -541,7 +538,7 @@
     <section class="galeria pb-4 paused" id="galeria">
 
         <div class="titulo-galeria py-5">
-            <h2 class="text-center py-5 mt-4 fw-bold anim-down">Explora nuestra experiencia</h2>
+            <h2 class="text-center py-5 mt-4 fw-bold anim-fade-in">Explora nuestra experiencia</h2>
         </div>
         <div
             class="container galeria-contenedor d-flex flex-wrap-reverse justify-content-evenly align-items-center py-3 px-2">
@@ -552,7 +549,7 @@
                     de nuestros eventos, fiestas épicas llenas de energía, donde cada
                     imagen cuenta una historia única.
                 </p>
-                <p class="fs-3 py-5 fw-bold destacado anim-up anim-pause-2" id="texto2">
+                <p class="fs-3 py-5 fw-bold destacado anim-left anim-pause-2" id="texto2">
                     ¿Estás listo para sumergirte en el mundo de la música y la diversión?
                 </p>
                 <div class="text-start pt-3 btn-galeria anim-fade-in anim-pause-3">
@@ -641,6 +638,7 @@
             <button class="carrusel-control carrusel-next px-3">&#9654;</button>
         </div>
     </section>
+
 
     <!--FOOTER-->
     <footer class="bg-black text-light pt-5" id="footer">
