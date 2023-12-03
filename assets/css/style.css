@@ -790,7 +790,8 @@ footer a:hover {
 }
 
 
-/*Fondo servicios*/
+
+/*Fondo opacidad servicios*/
 
 .overlay-bg {
   position: absolute;
@@ -798,14 +799,14 @@ footer a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0); /* Inicialmente transparente */
+  background-color: rgba(0, 0, 0, 0); 
   transition: background-color 0.3s ease; /* Transición suave */
   z-index: 1;
   opacity: 0;
 }
 
 .box:hover .overlay-bg {
-  background-color: rgba(4, 4, 92, 0.6); /* Cambia la opacidad al pasar el mouse sobre la caja (.box) */
+  background-color: rgba(4, 4, 92, 0.6); 
   opacity: 1;
 }
 
@@ -815,12 +816,11 @@ footer a:hover {
   position: absolute;
   width: 100%;
   z-index: 1000; /* Asegura que el navbar esté sobre el video */
-  background-color: transparent; /* Hace el fondo del navbar transparente */
+  background-color: transparent; 
 }
 
 
-
-
+/* Divisor del hero */
 .custom-shape-divider-bottom-1701560545 {
   position: absolute;
   bottom: 0;
@@ -839,5 +839,5 @@ footer a:hover {
 }
 
 .custom-shape-divider-bottom-1701560545 .shape-fill {
-  fill: #04045C;
+  fill: #000000;
 }
